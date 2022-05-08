@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSSEDemo</title>
+    <style type="text/css">
+
+    div{
+        height: 200px;
+        width: 200px;
+        transition: 3s;
+        font-size: 25px;
+        font-weight: bold;
+        color: whitesmoke;
+        background-color: red;
+    }
+
+    .TranslateDiv:hover{
+        -webkit-transform:translate(100px,100px) ;
+        -moz-transform: translate(100px,100px);
+        -ms-transform: translate(100px,100px);
+        -o-transform: translate(100px,100px);
+        transform: translate(100px,100px);
+        background-color: blue;
+        color: yellow;
+    }
+
+    .RotateDiv:hover{
+        -webkit-transform:rotate(360deg)
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(100px,100px);
+        background-color: yellow;
+
+    }
+
+    .RotateDiv3D:hover{
+        -webkit-transfrom:rotate3d(1,1,0,360deg);
+        -moz-transform:rotate3d(1,1,0,360deg);
+        -ms-transform:rotate3d(1,1,0,360deg);
+        -o-transform:rotate3d(1,1,0,360deg);
+        transform: rotate3d(1,1,0,360deg);
+        background-color: blue;
+        color: yellow;
+    }
+
+    .SkewDiv:hover{
+        -webkit-transform:skew(45deg);
+        -moz-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+        -o-transform: skew(45deg);
+        transform: skew(45deg);
+        background-color: blue;
+        color: yellow;
+    }
+   
+    .ScaleDiv:hover{
+        -webkit-transform:scale(1.5,1);
+        -moz-transform:scale(1.5,);
+        -o-transform: scale(1.5,1);
+        transform: scale(1.5,1);
+        background-color: blue;
+        color: yellow;
+    }
+    
+    .OpacityDiv:hover{
+        opacity:0.5;
+        
+
+    }
+
+    .RGBADiv:hover{
+        background: rgba(128,128,0,0.5);
+
+    }
+
+    .BoxShadowDiv:hover{
+        box-shadow:0px 0px 30px rgb(10,10,26) ;
+    }
+
+    .TextShadowDiv:hover{
+        text-shadow: 3px 3px 3px whitesmoke;
+
+    }
+
+    .BorderRadiusDiv:hover{
+        border-radius: 50%;
+    }
+
+    .OverFlowDiv{overflow:auto;}
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="TranslateDiv">Translate</div><hr>
+    <div class="RotateDiv">Rotate</div><hr>
+    <div class="RotateDiv3D">Rotate 3D</div><hr>
+    <div class="SkewDiv">Skew</div><hr>
+    <div class="ScaleDiv">Scale</div><hr>
+    <div class="OpacityDiv">Opacity</div><hr>
+    <div class="RGBADiv">RGBA</div><hr>
+    <div class="BoxShadowDiv">Box-Shadow</div><hr>
+    <div class="TextShadowDiv">Text-Shadow</div><hr>
+    <div class="BorderRadiusDiv">Border Radius</div><hr>
+    <div class="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow</div>
+</body>
+</html>
